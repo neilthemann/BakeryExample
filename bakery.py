@@ -13,6 +13,16 @@ userMenuChoice = 0
 userSubMenuExit = False
 userSubMenuChoice = 0
 
+def viewCart():
+    print("*******************")
+    print("Your cart:")
+    print("Total cupcakes: " + str(totalCupcakes))
+    print("Total pies: " + str(totalPies))
+    print("Total muffins: " + str(totalMuffins))
+    print("Total cakes: " + str(totalCakes))
+    print("Total cost: " + str(totalCost))
+    print("*******************")
+
 while (userExit == False):
     print("Welcome to the bakery!")
     print("What would you like to do?")
@@ -46,5 +56,11 @@ while (userExit == False):
             elif(userSubMenuChoice == 5):
                 userSubMenuExit = True
                 break
+            else:
+                print("Please enter a valid number")
+
+    elif(userMenuChoice == 2):
+        viewCart()
+        
 
     
