@@ -31,4 +31,20 @@ while (userExit == False):
             print("5. Return to previous menu")
             userSubMenuChoice = int(input())
 
+            if(userSubMenuChoice == 1):
+                totalCupcakes = totalCupcakes + 1
+                totalCost = totalCost + 5
+            elif(userSubMenuChoice == 2):
+                totalPies = totalPies + 1
+                totalCost = totalCost + 6
+            elif(userSubMenuChoice == 3):
+                totalMuffins = totalMuffins + 1
+                totalCost = totalCost + 4
+            elif(userSubMenuChoice == 4):
+                totalCakes = totalCakes + 1
+                totalCost = totalCost + 15
+            elif(userSubMenuChoice == 5):
+                userSubMenuExit = True
+                break
+
     
