@@ -23,6 +23,19 @@ def viewCart():
     print("Total cost: " + str(totalCost))
     print("*******************")
 
+def checkout():
+    file = open("reciept.txt", "w")
+    file.write("Thank you for your purchase from the Bakery!\n")
+    file.write("*******************\n")
+    file.write("Total cupcakes: " + str(totalCupcakes) + "\n")
+    file.write("Total pies: " + str(totalPies) + "\n")
+    file.write("Total muffins: " + str(totalMuffins) + "\n")
+    file.write("Total cakes: " + str(totalCakes) + "\n")
+    file.write("Total cost: " + str(totalCost) + "\n")
+    file.write("*******************\n")
+    file.write("Please visit us on Facepage\n")
+    file.close()
+    
 while (userExit == False):
     print("Welcome to the bakery!")
     print("What would you like to do?")
@@ -61,6 +74,15 @@ while (userExit == False):
 
     elif(userMenuChoice == 2):
         viewCart()
+
+    elif(userMenuChoice == 3):
+        checkout()
+        userExit = True
+
+
+
+
+
         
 
     
