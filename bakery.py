@@ -1,6 +1,7 @@
 # Bakery cart appliction example
 # Neil Mann
 # CIS-120-FA18
+# Hello from 2020
 
 # Define variables
 totalCost = 0
